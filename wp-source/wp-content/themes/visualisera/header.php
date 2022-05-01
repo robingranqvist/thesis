@@ -8,6 +8,14 @@
     <meta name="author" content="Robin Granqvist">
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri() . "/assets/images/icons/favicon__visualisera-wordpress.svg" ?> ">
     <?php wp_head() ?>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3J8JWJ10Q0');
+    </script>
+    
   </head>
   <body>
     <div class="topbar__outer-wrapper">

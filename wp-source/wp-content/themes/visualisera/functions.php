@@ -47,6 +47,7 @@ function visualisera_register_scripts ()  {
   wp_enqueue_script('visualisera-tweenlite', "https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js", array(), "3.10.4", true);
   wp_enqueue_script('visualisera-jquery', "https://code.jquery.com/jquery-3.6.0.min.js", array(), "3.10.4", true);
   wp_enqueue_script('visualisera-scrolltrigger', "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js", array(), "1.0", true);
+  wp_enqueue_script('visualisera-ga', "https://www.googletagmanager.com/gtag/js?id=G-3J8JWJ10Q0", array(), "1.0", true);
 }
 
 add_action('wp_enqueue_scripts', 'visualisera_register_scripts');
