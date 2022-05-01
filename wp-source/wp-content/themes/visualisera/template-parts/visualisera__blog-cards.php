@@ -20,7 +20,8 @@
 ?>
       <div class="blog__list-item">
         <div class="blog__img-outer-wrapper">
-          <div class="blog__img-wrapper" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>')">
+          <div class="blog__img-wrapper">
+            <img src="<?php echo get_the_post_thumbnail_url(); ?>" class="blog__img" loading="lazy"/>
             <div class="blog__img-overlay"></div>
           </div>
         </div>

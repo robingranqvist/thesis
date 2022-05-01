@@ -23,7 +23,9 @@
     </div>
   </div>
 
-  <div class="split__img-wrapper" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>')" alt="<?php the_title(); ?>"></div>
+  <div class="split__img-wrapper">
+    <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="cta__img" loading="lazy">
+  </div>
 <?php
         endwhile;
 ?>

@@ -523,16 +523,21 @@ img {
 .split__img-wrapper {
   position: absolute;
   left: auto;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  overflow: hidden;
   width: 50%;
   height: 100%;
-  /* background-image: url(https://assets.website-files.com/6261a81…/6265bef…_img__cta-split-1.jpg); */
-  background: var(--color-primary-white);
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  align-items: center;
+}
+
+.cta__img,
+.blog__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .heading__inner-wrapper.is--left.is--cta {
