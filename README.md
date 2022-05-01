@@ -24,4 +24,4 @@ This is the static, downloaded source code for the Wordpress site used for perfo
 
 This is the full source code for the AWS-deployed Wordpress site. It contains the full installation, however, the template specific files can be found in wp-source/wp-content/themes/visualisera. Assets uploaded through the CMS can be found in wp-source/wp-content/themes/visualisera/uploads/2022/04.
 
-![image](https://user-images.githubusercontent.com/54509721/166127020-661d3f4e-1ad1-4ca9-b322-01f5b039a6ca.png)
+![repo__thumb](https://user-images.githubusercontent.com/54509721/166127326-3ce75a36-45a9-41a1-bbd6-d7c49b0e25f3.png)
