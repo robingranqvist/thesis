@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Thesis - performance">
+    <meta name="author" content="Robin Granqvist">
+    <link rel="shortcut icon" href="wp-content/themes/visualisera/assets/images/icons/favicon__visualisera-wordpress.svg">
+    <title>Visualisera &#8211; Thesis Performance Template</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='http://cdnjs.cloudflare.com/' />
+<link rel='dns-prefetch' href='http://code.jquery.com/' />
+<link rel='dns-prefetch' href='http://www.googletagmanager.com/' />
+<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/13.53.139.156\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.9.3"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('index.html');--wp--preset--duotone--grayscale: url('index.html');--wp--preset--duotone--purple-yellow: url('index.html');--wp--preset--duotone--blue-red: url('index.html');--wp--preset--duotone--midnight: url('index.html');--wp--preset--duotone--magenta-yellow: url('index.html');--wp--preset--duotone--purple-green: url('index.html');--wp--preset--duotone--blue-orange: url('index.html');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel='stylesheet' id='visualisera-fonts-css'  href='https://fonts.googleapis.com/css2?family=Manrope%3Awght%40400%3B500%3B600&#038;display=swap&#038;ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='visualisera-style-css'  href='wp-content/themes/visualisera/style.css' type='text/css' media='all' />
+<link rel="https://api.w.org/" href="wp-includes/wp-json.json" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="wp-includes/xmlrpc.xml" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.9.3" />
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3J8JWJ10Q0');
+    </script>
+  </head>
+  <body>
+    <div class="topbar__outer-wrapper">
+      <div class="container">
+        <div class="topbar__inner-wrapper">
+          <div class="subheader is--white has--no-margin has--right-margin is--top-bar">New feature</div><p>
+          Share your dashboards with your team.&nbsp;<a href="index.html#" class="is--white has--border">Learn more!</a></p>
+        </div>
+      </div>
+    </div>
+    <section class="section is--hero">
+      <div class="container">
+        <div class="nav__outer-wrapper">
+          <div class="nav__brand">
+             
+
+            <img class="nav__logo" src="wp-content/uploads/2022/04/logo__visualisera.svg" alt="Visualisera Logo" />
+          </div>
+          <ul class="nav__wrapper"><li id="menu-item-60" class="nav__item menu-item menu-item-type-post_type menu-item-object-page menu-item-60"><a href="http://13.53.139.156/sample-page/">Features</a></li>
+<li id="menu-item-59" class="nav__item menu-item menu-item-type-post_type menu-item-object-page menu-item-59"><a href="http://13.53.139.156/how-it-works/">How It Works</a></li>
+<li id="menu-item-58" class="nav__item menu-item menu-item-type-post_type menu-item-object-page menu-item-58"><a href="http://13.53.139.156/about/">About</a></li>
+<li id="menu-item-57" class="nav__item menu-item menu-item-type-post_type menu-item-object-page menu-item-57"><a href="http://13.53.139.156/support/">Support</a></li>
+<li id="menu-item-63" class="nav__item btn is--primary menu-item menu-item-type-post_type menu-item-object-page menu-item-63"><a href="http://13.53.139.156/get-started/">Get Started</a></li>
+</ul> 
+          <div class="nav__wrapper is--responsive">
+            <img src="wp-content/themes/visualisera/assets/images/icons/icon__menu.svg" class="icon__menu-mobile"/>
+          </div>
+        </div>
+        <!-- Responsive menu -->
+        <div class="menu__outer-wrapper">
+          <div class="menu__inner-wrapper">
+            <ul class="mobile-nav__wrapper"><li id="menu-item-67" class="nav__item menu-item menu-item-type-post_type menu-item-object-page menu-item-67"><a href="http://13.53.139.156/sample-page/">Features</a></li>
+<li id="menu-item-66" class="nav__item menu-item menu-item-type-post_type menu-item-object-page menu-item-66"><a href="http://13.53.139.156/how-it-works/">How It Works</a></li>
+<li id="menu-item-65" class="nav__item menu-item menu-item-type-post_type menu-item-object-page menu-item-65"><a href="http://13.53.139.156/about/">About</a></li>
+<li id="menu-item-64" class="nav__item menu-item menu-item-type-post_type menu-item-object-page menu-item-64"><a href="http://13.53.139.156/support/">Support</a></li>
+</ul> 
+          </div>
+        </div>
+          <div class="hero__content-outer-wrapper">
+      <div class="hero__content-inner-wrapper">
+        <h1>
+            <span class="h1__accent">Visualize</span> & share all your data with Visualisera
+        </h1>
+        <p class="subtitle">
+            Lorem ipsum dolor sit amet, <i>consectetur adipiscing</i> elit. Sed id luctus augue. Nam semper elit turpis. Nunc eu pellentesque nunc luctus - augue.
+        </p>
+        <div class="hero__btn-wrapper">
+            <button class="btn is--primary has--right-margin">
+              Get Started
+            </button>
+            <button class="btn is--secondary video">Watch video</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__ill-wrapper">
+    <div class="container">
+    <img src="wp-content/themes/visualisera/assets/images/illustrations/ill__dashboard-x2.png" class="ill__dashboard" alt="Dashboard Illustration"/>
+    </div>
+    <div class="dashboard__overlay">
+      <div class="btn__dashboard-play">
+        <img src="wp-content/themes/visualisera/assets/images/icons/icon__play.svg" class="icon__play"/>
+      </div>
+    </div>
+    <div class="dashboard__animation-cover"></div>
+  </div>
+</section><section class="section is--company">
+  <div class="container">
+    <div class="logos__grid">
+      <img src="wp-content/themes/visualisera/assets/images/logos/company-logo__1.svg" class="logos__logo"/>
+      <img src="wp-content/themes/visualisera/assets/images/logos/company-logo__2.svg" class="logos__logo"/>
+      <img src="wp-content/themes/visualisera/assets/images/logos/company-logo__3.svg" class="logos__logo"/>
+      <img src="wp-content/themes/visualisera/assets/images/logos/company-logo__4.svg" class="logos__logo"/>
+      <img src="wp-content/themes/visualisera/assets/images/logos/company-logo__5.svg" class="logos__logo"/>
+    </div>
+  </div>
+</section><section class="section has--padding">
+  <div class="container">
+    <div class="heading__outer-wrapper fade-in">
+      <div class="heading__inner-wrapper">
+        <div class="subheader">Product</div>
+        <h2>Gather all of your data sources onto one customizable dashboard</h2>
+        <p class="subtitle">
+          Praesent vel semper mi. In hac habitasse platea dictumst. 
+          Etiam vehicula lorem sapien, nec semper lorem accumsan id. 
+          Mauris dapibus aliquam ornare.
+        </p>
+      </div>
+    </div>
+
+    <div class="card__grid fade-in">
+      <div class="card__item">
+        <img src="wp-content/uploads/2022/04/ill__1-1.png" alt="Integrations" class="feature__img" loading="lazy">
+          <div class="card__heading">
+            <h3 class="has--no-margin">Integrations</h3>
+          </div>
+          <p>Praesent vel semper mi. In hac habitasse platea dictumst. Etiam vehicula lorem.</p>
+      </div>
+      <div class="card__item">
+        <img src="wp-content/uploads/2022/04/ill__2-1.png" alt="Visualization" class="feature__img" loading="lazy">
+          <div class="card__heading">
+            <h3 class="has--no-margin">Visualization</h3>
+          </div>
+          <p>Praesent vel semper mi. In hac habitasse platea dictumst. Etiam vehicula lorem.</p>
+      </div>
+      <div class="card__item">
+        <img src="wp-content/uploads/2022/04/ill__3-1.png" alt="Reporting" class="feature__img" loading="lazy">
+          <div class="card__heading">
+            <h3 class="has--no-margin">Reporting</h3>
+          </div>
+          <p>Praesent vel semper mi. In hac habitasse platea dictumst. Etiam vehicula lorem.</p>
+      </div>
+  </div>
+</section><section class="section has--padding fade-in">
+  <div class="container">
+    <div class="heading__outer-wrapper is--left has--no-margin">
+      <div class="heading__inner-wrapper is--left">
+        <div class="subheader">Product</div>
+        <h2>Don't waste anymore time. 
+          Visualisera helps you gather all of your data in one place, 
+          all without a single line of code.
+        </h2>
+        <div class="list__icons">
+          <div class="list__icon-wrapper">
+            <img src="wp-content/themes/visualisera/assets/images/icons/icon__check.svg" class="icon__check"/>
+            <p>Lorem Ipsum</p>
+          </div>
+          <div class="list__icon-wrapper">
+            <img src="wp-content/themes/visualisera/assets/images/icons/icon__check.svg" class="icon__check"/>
+            <p>Duis ut massa enim</p>
+          </div>
+          <div class="list__icon-wrapper">
+            <img src="wp-content/themes/visualisera/assets/images/icons/icon__check.svg" class="icon__check"/>
+            <p>Duis ut leo quis</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><section class="section has--padding">
+  <div class="container">
+    <div class="feature__grid-vertical">
+      <div class="feature__item-vertical fade-in">
+        <div class="feature__item-split-wrapper">
+          <div class="feature-img__wrapper">
+            <img src="wp-content/uploads/2022/04/ill__4-1.png" alt="Fetch" loading="lazy">
+          </div>
+          <div class="feature__content-wrapper">
+            <h3>Fetch</h3>
+            <p>Praesent vel semper mi. In hac habitasse platea dictumst. Etiam vehicula lorem sapien, nec semper lorem accumsan id. Mauris dapibus.</p>
+            <div class="feature__list__wrapper">
+                <div class="feature__list-item">
+                  <img src="wp-content/themes/visualisera/assets/images/icons/icon__check.svg" class="icon__check"/>
+                  <p>Aenean non massa quis</p>
+                </div>
+                <div class="feature__list-item">
+                  <img src="wp-content/themes/visualisera/assets/images/icons/icon__check.svg" class="icon__check"/>
+                  <p>Nullam scelerisque molestie faucibus</p>
+                </div>
+                <div class="feature__list-item">
+                  <img src="wp-content/themes/visualisera/assets/images/icons/icon__check.svg" class="icon__check"/>
+                  <p>Curabitur tempus ligula faucibus</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="feature__item-vertical fade-in">
+        <div class="feature__item-split-wrapper">
+          <div class="feature-img__wrapper">
+            <img src="wp-content/uploads/2022/04/ill__5-1.png" alt="Visualize" loading="lazy">
+          </div>
+          <div class="feature__content-wrapper">
+            <h3>Visualize</h3>
+            <p>Praesent vel semper mi. In hac habitasse platea dictumst. Etiam vehicula lorem sapien, nec semper lorem accumsan id. Mauris dapibus.</p>
+            <div class="feature__list__wrapper">
+                <div class="feature__list-item">
+                  <img src="wp-content/themes/visualisera/assets/images/icons/icon__check.svg" class="icon__check"/>
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="feature__list-item">
+                  <img src="wp-content/themes/visualisera/assets/images/icons/icon__check.svg" class="icon__check"/>
+                  <p>Mauris dapibus aliquam ornare</p>
+                </div>
+                <div class="feature__list-item">
+                  <img src="wp-content/themes/visualisera/assets/images/icons/icon__check.svg" class="icon__check"/>
+                  <p>Praesent vel semper</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="feature__item-vertical fade-in">
+        <div class="feature__item-split-wrapper">
+          <div class="feature-img__wrapper">
+            <img src="wp-content/uploads/2022/04/ill__6-1.png" alt="Share" loading="lazy">
+          </div>
+          <div class="feature__content-wrapper">
+            <h3>Share</h3>
+            <p>Praesent vel semper mi. In hac habitasse platea dictumst. Etiam vehicula lorem sapien, nec semper lorem accumsan id. Mauris dapibus.</p>
+            <div class="feature__list__wrapper">
+                <div class="feature__list-item">
+                  <img src="wp-content/themes/visualisera/assets/images/icons/icon__check.svg" class="icon__check"/>
+                  <p>Nullam sed tempor justo</p>
+                </div>
+                <div class="feature__list-item">
+                  <img src="wp-content/themes/visualisera/assets/images/icons/icon__check.svg" class="icon__check"/>
+                  <p>Maecenas placerat varius ligula</p>
+                </div>
+                <div class="feature__list-item">
+                  <img src="wp-content/themes/visualisera/assets/images/icons/icon__check.svg" class="icon__check"/>
+                  <p>Maecenas euismod ligula felis</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><section class="section is--blue is--cta fade-in">
+  <div class="container">
+    <div class="split__wrapper">
+      <div class="heading__inner-wrapper is--left is--cta">
+        <div class="subheader is--white">Get started</div>
+        <h2 class="is--small">Dont wait, get started with the transformation of data visualization today</h2>
+        <p class="subtitle is--white">Vivamus non dui non eros consectetur tincidunt. Sed in enim egestas, aliquet dolor id, sollicitudin urna. Sed eget velit tortor. Proin convallis lorem urna, eget dapibus felis</p>
+        <a href="index.html#" class="btn is--secondary is--cta w-button">Get started</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="split__img-wrapper">
+    <img src="wp-content/uploads/2022/04/img__cta-split-2-1.jpg" alt="Dont wait, get started with the transformation of data visualization today" class="cta__img" loading="lazy">
+  </div>
+</section><section class="section is--testimonial has--padding fade-in">
+  <div class="container">
+    <div class="heading__outer-wrapper is--left is--spread">
+      <div class="heading__inner-wrapper is--left">
+        <div class="subheader">Testimonials</div>
+        <h2>Our customers</h2>
+        <p class="subtitle">Easy, scalable and without a single line of code.</p>
+      </div>
+      <div class="review__wrapper">
+      <img src="wp-content/themes/visualisera/assets/images/icons/icon__stars.svg" class="icon__stars"/>
+        <p>*Rated 5/5 by 95% of customers</p>
+      </div>
+    </div>
+    <div class="testimonial__list">
+      <div class="testimonial__wrapper">
+        <div class="testimonial__heading-wrapper">
+          <h3 class="has--no-margin">Amazing</h3>
+          <img src="wp-content/themes/visualisera/assets/images/icons/icon__stars-testimonial.svg" class="icon__stars-testimonial"/>
+        </div>
+        <p>"Vivamus non dui non eros consectetur tincidunt. Sed in enim egestas, aliquet dolor id, sollicitudin urna. Sed eget velit tortor. Proin convallis lorem urna, eget dapibus felis pharetra tincidunt."</p>
+        <div class="customer__wrapper">
+          <img src="wp-content/uploads/2022/04/testimonial__1.png" class="testimonial__customer-img"/>
+          <div class="customer__name-wrapper">
+            <p class="customer__name">John Doe</p>
+            <p class="customer__title">CEO at Lorem Ipsum</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial__wrapper">
+        <div class="testimonial__heading-wrapper">
+          <h3 class="has--no-margin">It rocks</h3>
+          <img src="wp-content/themes/visualisera/assets/images/icons/icon__stars-testimonial.svg" class="icon__stars-testimonial"/>
+        </div>
+        <p>"Phasellus sit amet tellus sollicitudin, tempor quam eget, laoreet ex. Sed dapibus faucibus leo, sit amet sollicitudin elit dictum ut. Suspendisse blandit viverra nisi, non aliquet libero eleifend in."</p>
+        <div class="customer__wrapper">
+          <img src="wp-content/uploads/2022/04/testimonial__2.png" class="testimonial__customer-img"/>
+          <div class="customer__name-wrapper">
+            <p class="customer__name">Jane Doe</p>
+            <p class="customer__title">CTO at Lorem Ipsum</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial__wrapper">
+        <div class="testimonial__heading-wrapper">
+          <h3 class="has--no-margin">Beautiful</h3>
+          <img src="wp-content/themes/visualisera/assets/images/icons/icon__stars-testimonial.svg" class="icon__stars-testimonial"/>
+        </div>
+        <p>"Praesent bibendum rhoncus sapien, eu sodales augue sollicitudin condimentum. Praesent pulvinar tempor elit non placerat. Praesent pellentesque, nisl laoreet tincidunt imperdiet."</p>
+        <div class="customer__wrapper">
+          <img src="wp-content/uploads/2022/04/testimonial__3.png" class="testimonial__customer-img"/>
+          <div class="customer__name-wrapper">
+            <p class="customer__name">Joe Doe</p>
+            <p class="customer__title">CTO at Lorem Ipsum</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><section class="section">
+  <div class="container">
+    <div class="cta__wrapper fade-in">
+      <video autoplay loop muted src="wp-content/themes/visualisera/assets/videos/vid__cta-bg-2.mp4" class="video__bg" ></video>
+      <div class="heading__outer-wrapper has--no-bottom-margin">
+        <div class="heading__inner-wrapper">
+          <div class="subheader is--white">Join Now</div>
+          <h2>Start visualizing today</h2>
+          <p class="subtitle is--white">
+            Vivamus non dui non eros consectetur tincidunt. 
+            Sed in enim egestas, aliquet dolor id, 
+            sollicitudin urna. Sed eget velit tortor. 
+            Proin convallis lorem urna, 
+            eget
+          </p>
+          <button class="btn is--secondary is--cta">Get Started</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><section class="section has--padding">
+  <div class="container">
+    <div class="heading__outer-wrapper fade-in">
+      <div class="heading__inner-wrapper">
+        <div class="subheader">Blog</div>
+        <h2>Follow our latest blog posts</h2>
+        <p class="subtitle">Vivamus non dui non eros consectetur tincidunt. 
+          Sed in enim egestas, aliquet dolor id, sollicitudin urna. 
+          Sed eget velit tortor. Proin convallis lorem urna, eget
+        </p>
+      </div>
+    </div>
+    <div class="blog__list fade-in">
+      <div class="blog__list-item">
+        <div class="blog__img-outer-wrapper">
+          <div class="blog__img-wrapper">
+            <img src="wp-content/uploads/2022/04/blog__img-1.jpg" class="blog__img" loading="lazy"/>
+            <div class="blog__img-overlay"></div>
+          </div>
+        </div>
+        <h3 class="blog__heading">How Lorem Ipsum uses Visualisera to increase their productivity</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dignissim,&hellip;</p>
+        <div class="blog__read-more"><a href="index.html#">Read more</a></div>
+      </div>
+      <div class="blog__list-item">
+        <div class="blog__img-outer-wrapper">
+          <div class="blog__img-wrapper">
+            <img src="wp-content/uploads/2022/04/blog__img-2.jpg" class="blog__img" loading="lazy"/>
+            <div class="blog__img-overlay"></div>
+          </div>
+        </div>
+        <h3 class="blog__heading">The secret of organizing all your data with Visualisera</h3>
+        <p>Praesent condimentum maximus massa ut condimentum. Nulla ac est eget&hellip;</p>
+        <div class="blog__read-more"><a href="index.html#">Read more</a></div>
+      </div>
+      <div class="blog__list-item">
+        <div class="blog__img-outer-wrapper">
+          <div class="blog__img-wrapper">
+            <img src="wp-content/uploads/2022/04/blog__img-3.jpg" class="blog__img" loading="lazy"/>
+            <div class="blog__img-overlay"></div>
+          </div>
+        </div>
+        <h3 class="blog__heading">Top 20 ways of visualizing data using visualisation tools</h3>
+        <p>Vestibulum cursus, eros et pellentesque vulputate, ligula mi fringilla dolor,&hellip;</p>
+        <div class="blog__read-more"><a href="index.html#">Read more</a></div>
+      </div>
+      <div class="blog__list-item">
+        <div class="blog__img-outer-wrapper">
+          <div class="blog__img-wrapper">
+            <img src="wp-content/uploads/2022/04/blog__img-6.jpg" class="blog__img" loading="lazy"/>
+            <div class="blog__img-overlay"></div>
+          </div>
+        </div>
+        <h3 class="blog__heading">How music libraries are structured using only no-code tools</h3>
+        <p>Vestibulum malesuada laoreet erat in scelerisque. Praesent at mattis libero.&hellip;</p>
+        <div class="blog__read-more"><a href="index.html#">Read more</a></div>
+      </div>
+      <div class="blog__list-item">
+        <div class="blog__img-outer-wrapper">
+          <div class="blog__img-wrapper">
+            <img src="wp-content/uploads/2022/04/blog__img-5.jpg" class="blog__img" loading="lazy"/>
+            <div class="blog__img-overlay"></div>
+          </div>
+        </div>
+        <h3 class="blog__heading">How no-code can be utilized for building web applications</h3>
+        <p>SDonec lacinia lacus pulvinar enim imperdiet rutrum. Proin lacinia aliquet&hellip;</p>
+        <div class="blog__read-more"><a href="index.html#">Read more</a></div>
+      </div>
+      <div class="blog__list-item">
+        <div class="blog__img-outer-wrapper">
+          <div class="blog__img-wrapper">
+            <img src="wp-content/uploads/2022/04/blog__img-4.jpg" class="blog__img" loading="lazy"/>
+            <div class="blog__img-overlay"></div>
+          </div>
+        </div>
+        <h3 class="blog__heading">How Lorem Ipsum increased their productivity by 300%</h3>
+        <p>Quisque aliquet neque in lectus dictum venenatis. Cras bibendum lorem&hellip;</p>
+        <div class="blog__read-more"><a href="index.html#">Read more</a></div>
+      </div>
+    </div>
+  </div>
+</section><section class="section has--padding has--top-border">
+  <div class="container">
+    <div class="heading__outer-wrapper fade-in">
+      <div class="heading__inner-wrapper">
+        <div class="subheader">Features</div>
+        <h2>Hundreds of available graphs and connections for your dashboards</h2>
+        <p class="subtitle__p">Vivamus non dui non eros consectetur tincidunt. 
+          Sed in enim egestas, aliquet dolor id, sollicitudin urna. Sed 
+          eget velit tortor. Proin convallis lorem urna, eget</p>
+        </div>
+      </div>
+    </div>
+    <div class="marquee__wrapper">
+      <div class="marquee__row-wrapper is--first">
+        <img src="wp-content/themes/visualisera/assets/images/illustrations/ill__marquee-top.svg" loading="lazy" alt="Marquee" class="marquee__row-img">
+      </div>
+      <div class="marquee__row-wrapper is--second">
+        <img src="wp-content/themes/visualisera/assets/images/illustrations/ill__marquee-top.svg" loading="lazy" alt="Marquee" class="marquee__row-img">
+      </div>
+    </div>
+</section><section class="section is--white is--cta fade-in">
+  <div class="container">
+    <div class="split__wrapper">
+      <div class="heading__inner-wrapper is--left is--cta">
+        <div class="subheader">Get started</div>
+        <h2 class="is--small">Dont wait, get started with the transformation of data visualization today</h2>
+        <p class="subtitle">Vivamus non dui non eros consectetur tincidunt. Sed in enim egestas, aliquet dolor id, sollicitudin urna. Sed eget velit tortor. Proin convallis lorem urna, eget dapibus felis</p>
+        <a href="index.html#" class="btn is--primary has--top-margin">Get started</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="split__img-wrapper">
+    <img src="wp-content/uploads/2022/04/img__cta-split-2-1.jpg" alt="Dont wait, get started with the transformation of data visualization today" class="cta__img" loading="lazy">
+  </div>
+</section><section class="section has--padding">
+  <div class="container">
+    <div class="cta__wrapper fade-in">
+      <video autoplay loop muted src="wp-content/themes/visualisera/assets/videos/vid__cta-bg.mp4" class="video__bg" ></video>
+      <div class="heading__outer-wrapper has--no-bottom-margin">
+        <div class="heading__inner-wrapper">
+          <div class="subheader is--white">Newsletter</div>
+          <h2>Get our latest news</h2>
+          <p class="subtitle is--white">
+            Vivamus non dui non eros consectetur tincidunt. 
+            Sed in enim egestas, aliquet dolor id, 
+            sollicitudin urna. Sed eget velit tortor. 
+            Proin convallis lorem urna, 
+            eget
+          </p>
+          <div class="cta__form-wrapper">
+            <input type="text" class="input__main" placeholder="Your email">
+            <button class="btn is--secondary is--cta is--form" type="submit">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section__bg-split"></div>
+</section><div class="modal__outer-wrapper">
+	<img src="wp-content/themes/visualisera/assets/images/icons/icon__close.svg" class="modal__btn-close"/>
+	<div class="modal__inner-wrapper">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/hGizn_843Mo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+</div>
+    <section class="section is--footer">
+    <div class="container">
+        <div class="footer__top-wrapper">
+        <div class="footer__top-item">
+            <h3>Visualisera</h3>
+            <p class="is--white">This is a website for a mock SaaS product called Visualisera. 
+            This page is built as a comparison to an identical version developed in Webflow.
+            
+            <br><br>Mock logos free to use under <a href="https://logoipsum.com/" target="_blank" class="link__is-white">LogoIpsums's license</a>.
+            Open source icons by <a href="https://fonts.google.com/icons" target="_blank" class="link__is-white">Google Icons</a> 
+            & <a href="https://fontawesome.com/v4/license/" target="_blank" class="link__is-white">Font Awesome</a>. 
+            All photos are free to use for both commercial & non-commercial purposes, 
+            as described on <a href="https://unsplash.com/license" target="_blank" class="link__is-white">Unsplash's lincense agreement</a>, as
+            well as background videos under <a href="https://www.pexels.com/sv-se/license/" target="_blank" class="link__is-white">Pexel's open license</a>. 
+            All code, illustrations, web design & interaction design by Robin G.
+            </p>
+        </div>
+        <div class="footer__top-item is--right">
+            <p class="is--white">Georgsgatan 4<br>00120 Helsingfors<br>
+            60.164070, 24.944341<br>Finland<br>Visualisera AB OY</p>
+        </div>
+        </div>
+        <div class="footer__bottom-wrapper">
+        <div class="footer__bottom-item">
+            <div class="footer__bottom-item">
+            <p>© Robin Granqvist - Thesis 2022 - Performance Test - Wordpress</p>
+            </div>
+        </div>
+        <div class="footer__bottom-item is--right">
+            <ul role="list" class="footer__icon-list w-list-unstyled">
+            <li class="footer__list-item">
+                <a href="index.html#" class="icon__link"><img src="wp-content/themes/visualisera/assets/images/icons/icon__instagram.svg"/></a>
+            </li>
+            <li class="footer__list-item">
+                <a href="index.html#" class="icon__link"><img src="wp-content/themes/visualisera/assets/images/icons/icon__linkedin.svg"/></a>
+            </li>
+            <li class="footer__list-item">
+                <a href="index.html#" class="icon__link"><img src="wp-content/themes/visualisera/assets/images/icons/icon__facebook.svg"/></a>
+            </li>
+            <li class="footer__list-item">
+                <a href="index.html#" class="icon__link"><img src="wp-content/themes/visualisera/assets/images/icons/icon__twitter.svg"/></a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <script type='text/javascript' src='wp-content/themes/visualisera/assets/js/visualisera.js@ver=1.0' id='visualisera-script-js'></script>
+<script type='text/javascript' src='../cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js@ver=3.10.4' id='visualisera-gsap-js'></script>
+<script type='text/javascript' src='../cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js@ver=3.10.4' id='visualisera-tweenlite-js'></script>
+<script type='text/javascript' src='../code.jquery.com/jquery-3.6.0.min.js@ver=3.10.4' id='visualisera-jquery-js'></script>
+<script type='text/javascript' src='../cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js@ver=1.0' id='visualisera-scrolltrigger-js'></script>
+<script type='text/javascript' src='https://www.googletagmanager.com/gtag/js?id=G-3J8JWJ10Q0&#038;ver=1.0' id='visualisera-ga-js'></script>
+    
+  </body>
+</html>
