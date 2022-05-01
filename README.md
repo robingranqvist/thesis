@@ -8,6 +8,10 @@ Mock company logos freely usable under [LogoIpsum's](https://logoipsum.com/) lic
 
 The Webflow site is currently deployed through [Webflow](https://performance-test-webflow-robin-g.webflow.io/), while the Wordpress site is temporarily deployed on a [t3-micro AWS EC2 instance](http://13.53.139.156/).
 
+## Static snapshots
+
+Both websites have been downloaded using wget commands, downloading all static code & assets. While Webflow includes javascript libraries such as jQuery & IX2, the alternatives used for Wordpress (gsap, scrolltrigger, tweenlite) has been downloaded as well. Google fonts & analytics scripts have not been downloaded and are instead imported through their CDN's for both sites.
+
 ## Assets
 
 These are all assets shared between the Webflow & Wordpress site.
