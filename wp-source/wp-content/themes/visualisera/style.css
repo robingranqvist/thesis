@@ -1,10 +1,10 @@
 /*
 Theme name: Visualisera
-Text domain: For Webflow performance analysis
+Text domain: Performance analysis
 Version: 1.0
 Author: Robin Granqvist
 Description: Visualisera Wordpress template for performance analysis
-Tags: Performance, Thesis
+Tags: Performance, Webflow, Wordpress, Thesis
 */
 
 :root {
@@ -45,14 +45,6 @@ h1 {
   font-weight: 700;
 }
 
-.h1__accent {
-  display: inline-block;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  border-radius: var(--border-radius-secondary);
-  background-color: rgba(33, 127, 252, 0.15);
-}
-
 h2 {
   margin-bottom: 1rem;
   font-size: 3rem;
@@ -73,6 +65,14 @@ h3 {
 
 h3.has--no-margin {
   margin-bottom: 0;
+}
+
+.h1__accent {
+  display: inline-block;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border-radius: var(--border-radius-secondary);
+  background-color: rgba(33, 127, 252, 0.15);
 }
 
 p {

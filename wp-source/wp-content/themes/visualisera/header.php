@@ -15,7 +15,6 @@
 
       gtag('config', 'G-3J8JWJ10Q0');
     </script>
-    
   </head>
   <body>
     <div class="topbar__outer-wrapper">
