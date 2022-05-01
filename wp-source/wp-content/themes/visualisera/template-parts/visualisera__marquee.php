@@ -12,10 +12,10 @@
     </div>
     <div class="marquee__wrapper">
       <div class="marquee__row-wrapper is--first">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/illustrations/ill__marquee-top.svg" loading="lazy" alt="" class="marquee__row-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/illustrations/ill__marquee-top.svg" loading="lazy" alt="Marquee" class="marquee__row-img">
       </div>
       <div class="marquee__row-wrapper is--second">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/illustrations/ill__marquee-top.svg" loading="lazy" alt="" class="marquee__row-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/illustrations/ill__marquee-top.svg" loading="lazy" alt="Marquee" class="marquee__row-img">
       </div>
     </div>
 </section>

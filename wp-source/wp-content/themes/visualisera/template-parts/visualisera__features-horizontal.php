@@ -24,7 +24,7 @@
 
 ?>
       <div class="card__item">
-        <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="feature__img">
+        <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="feature__img" loading="lazy">
           <div class="card__heading">
             <h3 class="has--no-margin"><?php the_title(); ?></h3>
           </div>

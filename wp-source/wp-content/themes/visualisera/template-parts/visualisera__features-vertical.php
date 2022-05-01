@@ -13,7 +13,7 @@
       <div class="feature__item-vertical fade-in">
         <div class="feature__item-split-wrapper">
           <div class="feature-img__wrapper">
-            <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
+            <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" loading="lazy">
           </div>
           <div class="feature__content-wrapper">
             <h3><?php the_title(); ?></h3>
