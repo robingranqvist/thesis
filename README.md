@@ -14,11 +14,11 @@ These are all assets shared between the Webflow & Wordpress site.
 
 ## webflow
 
-This is the static, downloaded source code for the Webflow site used for performance analysis 1. The static snapshot can be viewed live through Github Pages by [clicking here](https://robingranqvist.github.io/thesis/webflow/performance-test-webflow-robin-g.webflow.io/).
+This is the static, downloaded source code for the Webflow site used for performance analysis 1. The static snapshot can be viewed live through Github Pages by [clicking here](https://robingranqvist.github.io/thesis/webflow/performance-test-webflow-robin-g.webflow.io).
 
 ## wordpress
 
-This is the static, downloaded source code for the Wordpress site used for performance analysis 1.
+This is the static, downloaded source code for the Wordpress site used for performance analysis 1. The static snapshot can be viewed live through Github Pages by [clicking here](https://robingranqvist.github.io/thesis/wordpress/13.53.139.156).
 
 ## wp-source
 
