@@ -462,6 +462,8 @@ img {
   width: 100%;
   opacity: 0.1;
   z-index: 1;
+  object-fit: cover;
+  height: 100%;
 }
 
 .heading__outer-wrapper.has--no-bottom-margin {
