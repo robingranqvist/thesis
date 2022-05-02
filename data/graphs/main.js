@@ -49,7 +49,7 @@ const categoriesChart1 = [
 const categoriesChart2 = ["Cumulative Layout Shift"];
 const chartOptions = {
   type: "bar",
-  height: "350px",
+  height: "500px",
   offsetY: 0,
 };
 const barOptions = {
