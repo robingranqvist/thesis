@@ -10,8 +10,22 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+h1 {
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
 h2 {
   font-weight: 500;
+}
+
+p {
+  line-height: 1.6em;
+}
+
+.subtitle {
+  max-width: 75ch;
+  margin-bottom: 2rem;
 }
 
 .container {
@@ -50,12 +64,26 @@ h2 {
 }
 
 .yellow {
-  color: #ffa23b;
+  color: red;
 }
 
 @media only screen and (max-width: 1200px) {
   .chart__heading-wrapper,
   .chart__flex-container {
     flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .chart__total-wrapper {
+    text-align: left;
+  }
+
+  .chart__total-wrapper p {
+    margin-left: 0rem;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
   }
 }
