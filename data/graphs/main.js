@@ -80,11 +80,11 @@ let staticDesktopLeft = {
   },
   series: [
     {
-      name: "Webflow - Desktop",
+      name: "Webflow",
       data: webflowStaticDesktopLeft,
     },
     {
-      name: "Wordpress - Desktop",
+      name: "Wordpress",
       data: wordpressStaticDesktopLeft,
     },
   ],
@@ -102,17 +102,23 @@ let staticDesktopLeft = {
 
 let staticDesktopRight = {
   chart: chartOptions,
+  dataLabels: {
+    enabled: true,
+    formatter: function (val) {
+      return val + " CLS";
+    },
+  },
   colors: [colorBlue, colorYellow],
   plotOptions: {
     bar: barOptions2,
   },
   series: [
     {
-      name: "Webflow - Desktop",
+      name: "Webflow",
       data: webflowStaticDesktopRight,
     },
     {
-      name: "Wordpress - Desktop",
+      name: "Wordpress",
       data: wordpressStaticDesktopRight,
     },
   ],
@@ -158,11 +164,11 @@ let staticMobileLeft = {
   },
   series: [
     {
-      name: "Webflow - Mobile",
+      name: "Webflow",
       data: webflowStaticMobileLeft,
     },
     {
-      name: "Wordpress - Mobile",
+      name: "Wordpress",
       data: wordpressStaticMobileLeft,
     },
   ],
@@ -180,17 +186,23 @@ let staticMobileLeft = {
 
 let staticMobileRight = {
   chart: chartOptions,
+  dataLabels: {
+    enabled: true,
+    formatter: function (val) {
+      return val + " CLS";
+    },
+  },
   colors: [colorBlue, colorYellow],
   plotOptions: {
     bar: barOptions2,
   },
   series: [
     {
-      name: "Webflow - Mobile",
+      name: "Webflow",
       data: webflowStaticMobileRight,
     },
     {
-      name: "Wordpress - Mobile",
+      name: "Wordpress",
       data: wordpressStaticMobileRight,
     },
   ],
@@ -236,11 +248,11 @@ let liveDesktopLeft = {
   },
   series: [
     {
-      name: "Webflow - Desktop",
+      name: "Webflow",
       data: webflowLiveDesktopLeft,
     },
     {
-      name: "Wordpress - Desktop",
+      name: "Wordpress",
       data: wordpressLiveDesktopLeft,
     },
   ],
@@ -258,17 +270,23 @@ let liveDesktopLeft = {
 
 let liveDesktopRight = {
   chart: chartOptions,
+  dataLabels: {
+    enabled: true,
+    formatter: function (val) {
+      return val + " CLS";
+    },
+  },
   colors: [colorBlue, colorYellow],
   plotOptions: {
     bar: barOptions2,
   },
   series: [
     {
-      name: "Webflow - Desktop",
+      name: "Webflow",
       data: webflowLiveDesktopRight,
     },
     {
-      name: "Wordpress - Desktop",
+      name: "Wordpress",
       data: wordpressLiveDesktopRight,
     },
   ],
@@ -314,11 +332,11 @@ let liveMobileLeft = {
   },
   series: [
     {
-      name: "Webflow - Mobile",
+      name: "Webflow",
       data: webflowLiveMobileLeft,
     },
     {
-      name: "Wordpress - Mobile",
+      name: "Wordpress",
       data: wordpressLiveMobileLeft,
     },
   ],
@@ -336,17 +354,23 @@ let liveMobileLeft = {
 
 let liveMobileRight = {
   chart: chartOptions,
+  dataLabels: {
+    enabled: true,
+    formatter: function (val) {
+      return val + " CLS";
+    },
+  },
   colors: [colorBlue, colorYellow],
   plotOptions: {
     bar: barOptions2,
   },
   series: [
     {
-      name: "Webflow - Mobile",
+      name: "Webflow",
       data: webflowLiveMobileRight,
     },
     {
-      name: "Wordpress - Mobile",
+      name: "Wordpress",
       data: wordpressLiveMobileRight,
     },
   ],
