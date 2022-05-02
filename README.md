@@ -8,7 +8,7 @@ The website(s) is a mock SaaS product called Visualisera, some kind of no-code t
 
 Mock company logos freely usable under [LogoIpsum's](https://logoipsum.com/) license. Open source icons by [Google Icons](https://fonts.google.com/icons) & [Font Awesome](https://fontawesome.com/v4/license). All photos are free to use for both commercial & non-commercial purposes, as described on [Unsplash's lincense agreement](https://unsplash.com/license) as well as background videos under [Pexel's open lincense](https://www.pexels.com/sv-se/license). All code, illustrations, web design & interaction design by Robin G.
 
-The Webflow site is currently deployed through [Webflow](https://performance-test-webflow-robin-g.webflow.io/), while the [Wordpress](http://13.53.139.156) site is temporarily deployed on a t3-micro AWS EC2 instance.
+The Webflow site is currently deployed through the internal hosting environment of [Webflow](https://performance-test-webflow-robin-g.webflow.io/), while the [Wordpress](http://13.53.139.156) site is temporarily deployed on a t3-micro AWS EC2 instance.
 
 ## Static snapshots
 
