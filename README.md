@@ -18,6 +18,10 @@ Both websites have been downloaded using wget commands, downloading all static c
 
 These are all assets shared between the Webflow & Wordpress site.
 
+## Data
+
+This folder contains the source- and visualized performance data. It can be viewed by [clicking here](https://robingranqvist.github.io/thesis/data/graphs/)
+
 ## webflow
 
 This is the static, downloaded source code for the Webflow site used for performance analysis 1. The static snapshot can be viewed live through Github Pages by [clicking here](https://robingranqvist.github.io/thesis/webflow/performance-test-webflow-robin-g.webflow.io).
@@ -29,5 +33,3 @@ This is the static, downloaded source code for the Wordpress site used for perfo
 ## wp-source
 
 This is the full source code for the AWS-deployed Wordpress site. It contains the full installation, however, the template specific files can be found in wp-source/wp-content/themes/visualisera. Assets uploaded through the CMS can be found in wp-source/wp-content/themes/visualisera/uploads/2022/04.
-
-
