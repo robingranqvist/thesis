@@ -14,11 +14,11 @@ The Webflow site is currently deployed through the internal hosting environment 
 
 Both websites have been downloaded using wget commands, downloading all static code & assets. While Webflow includes javascript libraries such as jQuery & IX2, the alternatives used for Wordpress ([gsap](https://cdnjs.com/libraries/gsap), [scrolltrigger](https://cdnjs.com/libraries/ScrollTrigger), [tweenlite](https://www.cdnpkg.com/gsap/file/TweenLite.min.js/)) have been downloaded as well. Google fonts & analytics scripts have not been downloaded and are instead imported through their CDN's for both sites.
 
-## Assets
+## assets
 
 These are all assets shared between the Webflow & Wordpress site.
 
-## Data
+## data
 
 This folder contains the source- and visualized performance data. It can be viewed by [clicking here](https://robingranqvist.github.io/thesis/data/graphs/)
 
