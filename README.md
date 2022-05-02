@@ -20,7 +20,7 @@ These are all assets shared between the Webflow & Wordpress site.
 
 ## data
 
-This folder contains the source- and visualized performance data. It can be viewed by [clicking here](https://robingranqvist.github.io/thesis/data/graphs/)
+This folder contains the source- and visualized performance data. It can be viewed by [clicking here](https://robingranqvist.github.io/thesis/data/graphs/) (temporarily a bit strange looking, will be changed).
 
 ## webflow
 
