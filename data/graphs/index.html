@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Visualisera - Performance</title>
+    <meta name="description" content="Visualisera - Performance" />
+    <meta name="author" content="SitePoint" />
+
+    <meta property="og:title" content="Visualisera - Performance" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="#" />
+    <meta property="og:description" content="Visualisera - Performance" />
+    <meta property="og:image" content="" />
+
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Static Desktop -->
+      <div class="chart__heading-wrapper">
+        <h2>Static Desktop</h2>
+        <div class="chart__total-wrapper">
+          <p>
+            <span class="chart__total">Webflow</span> -
+            <span class="green">98</span> total average score
+          </p>
+          <p>
+            <span class="chart__total">Wordpress</span> -
+            <span class="green">99.1</span> total average score
+          </p>
+        </div>
+      </div>
+      <div class="chart__flex-container">
+        <div id="chart-static-desktop-left" class="chart__left"></div>
+        <div id="chart-static-desktop-right" class="chart__right"></div>
+      </div>
+
+      <!-- Static Mobile -->
+      <div class="chart__heading-wrapper">
+        <h2>Static Mobile</h2>
+        <div class="chart__total-wrapper">
+          <p>
+            <span class="chart__total">Webflow</span> -
+            <span class="yellow">78.87</span> total average score
+          </p>
+          <p>
+            <span class="chart__total">Wordpress</span> -
+            <span class="green">93.87</span> total average score
+          </p>
+        </div>
+      </div>
+      <div class="chart__flex-container">
+        <div id="chart-static-mobile-left" class="chart__left"></div>
+        <div id="chart-static-mobile-right" class="chart__right"></div>
+      </div>
+
+      <!-- Live Desktop -->
+      <div class="chart__heading-wrapper">
+        <h2>Deployed Desktop</h2>
+        <div class="chart__total-wrapper">
+          <p>
+            <span class="chart__total">Webflow</span> -
+            <span class="green">98.2</span> total average score
+          </p>
+          <p>
+            <span class="chart__total">Wordpress</span> -
+            <span class="green">99.2</span> total average score
+          </p>
+        </div>
+      </div>
+      <div class="chart__flex-container">
+        <div id="chart-live-desktop-left" class="chart__left"></div>
+        <div id="chart-live-desktop-right" class="chart__right"></div>
+      </div>
+
+      <!-- Live Mobile -->
+      <div class="chart__heading-wrapper">
+        <h2>Deployed Mobile</h2>
+        <div class="chart__total-wrapper">
+          <p>
+            <span class="chart__total">Webflow</span> -
+            <span class="yellow">80.8</span> total average score
+          </p>
+          <p>
+            <span class="chart__total">Wordpress</span> -
+            <span class="green">96.8</span> total average score
+          </p>
+        </div>
+      </div>
+      <div class="chart__flex-container">
+        <div id="chart-live-mobile-left" class="chart__left"></div>
+        <div id="chart-live-mobile-right" class="chart__right"></div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
