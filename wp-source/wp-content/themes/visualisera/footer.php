@@ -4,9 +4,10 @@
         <div class="footer__top-item">
             <h3>Visualisera</h3>
             <p class="is--white">This is a website for a mock SaaS product called Visualisera. 
-            This page is built as a comparison to an identical version developed in Webflow.
+                The page is built to measure the performance of Webflow by comparing it to an 
+                indentical version developed in Wordpress.
             
-            <br><br>Mock logos free to use under <a href="https://logoipsum.com/" target="_blank" class="link__is-white">LogoIpsums's license</a>.
+            <br><br>Mock logos freely usable under <a href="https://logoipsum.com/" target="_blank" class="link__is-white">LogoIpsums's license</a>.
             Open source icons by <a href="https://fonts.google.com/icons" target="_blank" class="link__is-white">Google Icons</a> 
             & <a href="https://fontawesome.com/v4/license/" target="_blank" class="link__is-white">Font Awesome</a>. 
             All photos are free to use for both commercial & non-commercial purposes, 
