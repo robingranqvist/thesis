@@ -1,5 +1,7 @@
 # Thesis - 2022 - Robin Granqvist
 
+![repo__thumb](https://user-images.githubusercontent.com/54509721/166127326-3ce75a36-45a9-41a1-bbd6-d7c49b0e25f3.png)
+
 This is the repo containing all my files used in my thesis @ BTH.
 
 The website(s) is a mock SaaS product called Visualisera, some kind of no-code tool used to visualize data. The pages are built to measure the performance of a Webflow site by comparing it to an identical version developed in Wordpress.
@@ -28,4 +30,4 @@ This is the static, downloaded source code for the Wordpress site used for perfo
 
 This is the full source code for the AWS-deployed Wordpress site. It contains the full installation, however, the template specific files can be found in wp-source/wp-content/themes/visualisera. Assets uploaded through the CMS can be found in wp-source/wp-content/themes/visualisera/uploads/2022/04.
 
-![repo__thumb](https://user-images.githubusercontent.com/54509721/166127326-3ce75a36-45a9-41a1-bbd6-d7c49b0e25f3.png)
+
