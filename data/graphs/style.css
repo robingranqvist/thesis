@@ -23,6 +23,12 @@ p {
   line-height: 1.6em;
 }
 
+a {
+  color: #217ffc;
+  text-decoration: none;
+  border-bottom: 1px solid #217ffc;
+}
+
 .subtitle {
   max-width: 75ch;
   margin-bottom: 2rem;
