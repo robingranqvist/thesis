@@ -40,21 +40,24 @@ a {
 }
 
 .chart__left {
-  width: 60%;
+  width: 100%;
 }
 
 .chart__right {
-  width: 40%;
+  width: 100%;
 }
 
-.chart__heading-wrapper,
-.chart__flex-container {
+.chart__heading-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem;
   font-weight: 500;
+}
+
+.chart__flex-container {
+  width: 100%;
 }
 
 .chart__total-wrapper {

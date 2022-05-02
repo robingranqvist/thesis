@@ -39,45 +39,18 @@ const wordpressLiveMobileRight = [0.008];
  */
 const colorBlue = "#217FFC";
 const colorYellow = "#FFA23B";
-const categoriesChart1 = [
-  "First Contentful Paint",
-  "Time To Interactive",
-  "Speed Index",
-  "Largest Contentful Paint",
-  "Total Blocking Time",
-];
-const categoriesChart2 = ["Cumulative Layout Shift"];
+const categoriesChart1 = ["FCP", "TTI", "SI", "LCP", "TBT"];
+const categoriesChart2 = ["CLS"];
 const chartOptions = {
   type: "bar",
-  height: "500px",
   offsetY: 0,
-};
-const barOptions = {
-  horizontal: false,
-  columnWidth: "80%",
-  endingShape: "rounded",
-};
-const barOptions2 = {
-  horizontal: false,
-  columnWidth: "25%",
-  endingShape: "rounded",
+  height: "auto",
 };
 
 /**
  * Static Desktop
  */
 let staticDesktopLeft = {
-  chart: chartOptions,
-  dataLabels: {
-    enabled: true,
-    formatter: function (val) {
-      return val + "s";
-    },
-  },
-  colors: [colorBlue, colorYellow],
-  plotOptions: {
-    bar: barOptions,
-  },
   series: [
     {
       name: "Webflow",
@@ -88,30 +61,60 @@ let staticDesktopLeft = {
       data: wordpressStaticDesktopLeft,
     },
   ],
+  chart: chartOptions,
+  plotOptions: {
+    bar: {
+      horizontal: true,
+      dataLabels: {
+        position: "top",
+      },
+    },
+  },
+  dataLabels: {
+    enabled: true,
+    offsetX: -6,
+    style: {
+      fontSize: "20px",
+      colors: ["#fff"],
+      fontWeight: "bold",
+    },
+    formatter: function (val) {
+      return val + "s";
+    },
+  },
+  colors: [colorBlue, colorYellow],
+  stroke: {
+    show: true,
+    width: 1,
+    colors: ["#fff"],
+  },
+  tooltip: {
+    shared: true,
+    intersect: false,
+  },
   xaxis: {
+    max: 1.18,
     categories: categoriesChart1,
+    labels: {
+      style: {
+        fontSize: "20px",
+      },
+    },
   },
   yaxis: {
     title: {
       text: "Time (seconds)",
     },
     min: 0,
-    max: 1.18,
+    labels: {
+      style: {
+        fontSize: "20px",
+      },
+    },
   },
 };
 
 let staticDesktopRight = {
-  chart: chartOptions,
-  dataLabels: {
-    enabled: true,
-    formatter: function (val) {
-      return val + " CLS";
-    },
-  },
-  colors: [colorBlue, colorYellow],
-  plotOptions: {
-    bar: barOptions2,
-  },
   series: [
     {
       name: "Webflow",
@@ -122,15 +125,54 @@ let staticDesktopRight = {
       data: wordpressStaticDesktopRight,
     },
   ],
+  chart: chartOptions,
+  plotOptions: {
+    bar: {
+      horizontal: true,
+      columnWidth: "10%",
+      dataLabels: {
+        position: "top",
+      },
+      barHeight: "10%",
+    },
+  },
+  dataLabels: {
+    enabled: true,
+    style: {
+      fontSize: "20px",
+      colors: ["#fff"],
+      fontWeight: "bold",
+    },
+  },
+  colors: [colorBlue, colorYellow],
+  stroke: {
+    show: true,
+    width: 1,
+    colors: ["#fff"],
+  },
+  tooltip: {
+    shared: true,
+    intersect: false,
+  },
   xaxis: {
+    max: 0.086,
     categories: categoriesChart2,
+    labels: {
+      style: {
+        fontSize: "20px",
+      },
+    },
   },
   yaxis: {
     title: {
       text: "CLS Score",
     },
     min: 0,
-    max: 0.086,
+    labels: {
+      style: {
+        fontSize: "20px",
+      },
+    },
   },
 };
 
@@ -151,17 +193,6 @@ chartStaticDesktopRight.render();
  * Static Mobile
  */
 let staticMobileLeft = {
-  chart: chartOptions,
-  dataLabels: {
-    enabled: true,
-    formatter: function (val) {
-      return val + "s";
-    },
-  },
-  colors: [colorBlue, colorYellow],
-  plotOptions: {
-    bar: barOptions,
-  },
   series: [
     {
       name: "Webflow",
@@ -172,30 +203,60 @@ let staticMobileLeft = {
       data: wordpressStaticMobileLeft,
     },
   ],
+  chart: chartOptions,
+  plotOptions: {
+    bar: {
+      horizontal: true,
+      dataLabels: {
+        position: "top",
+      },
+    },
+  },
+  dataLabels: {
+    enabled: true,
+    offsetX: -6,
+    style: {
+      fontSize: "20px",
+      colors: ["#fff"],
+      fontWeight: "bold",
+    },
+    formatter: function (val) {
+      return val + "s";
+    },
+  },
+  colors: [colorBlue, colorYellow],
+  stroke: {
+    show: true,
+    width: 1,
+    colors: ["#fff"],
+  },
+  tooltip: {
+    shared: true,
+    intersect: false,
+  },
   xaxis: {
+    max: 5.93,
     categories: categoriesChart1,
+    labels: {
+      style: {
+        fontSize: "20px",
+      },
+    },
   },
   yaxis: {
     title: {
       text: "Time (seconds)",
     },
     min: 0,
-    max: 5.93,
+    labels: {
+      style: {
+        fontSize: "20px",
+      },
+    },
   },
 };
 
 let staticMobileRight = {
-  chart: chartOptions,
-  dataLabels: {
-    enabled: true,
-    formatter: function (val) {
-      return val + " CLS";
-    },
-  },
-  colors: [colorBlue, colorYellow],
-  plotOptions: {
-    bar: barOptions2,
-  },
   series: [
     {
       name: "Webflow",
@@ -206,15 +267,54 @@ let staticMobileRight = {
       data: wordpressStaticMobileRight,
     },
   ],
+  chart: chartOptions,
+  plotOptions: {
+    bar: {
+      horizontal: true,
+      columnWidth: "10%",
+      dataLabels: {
+        position: "top",
+      },
+      barHeight: "10%",
+    },
+  },
+  dataLabels: {
+    enabled: true,
+    style: {
+      fontSize: "20px",
+      colors: ["#fff"],
+      fontWeight: "bold",
+    },
+  },
+  colors: [colorBlue, colorYellow],
+  stroke: {
+    show: true,
+    width: 1,
+    colors: ["#fff"],
+  },
+  tooltip: {
+    shared: true,
+    intersect: false,
+  },
   xaxis: {
+    max: 0.009,
     categories: categoriesChart2,
+    labels: {
+      style: {
+        fontSize: "20px",
+      },
+    },
   },
   yaxis: {
     title: {
       text: "CLS Score",
     },
     min: 0,
-    max: 0.009,
+    labels: {
+      style: {
+        fontSize: "20px",
+      },
+    },
   },
 };
 
@@ -235,17 +335,6 @@ chartStaticMobileRight.render();
  * Live Desktop
  */
 let liveDesktopLeft = {
-  chart: chartOptions,
-  dataLabels: {
-    enabled: true,
-    formatter: function (val) {
-      return val + "s";
-    },
-  },
-  colors: [colorBlue, colorYellow],
-  plotOptions: {
-    bar: barOptions,
-  },
   series: [
     {
       name: "Webflow",
@@ -256,30 +345,60 @@ let liveDesktopLeft = {
       data: wordpressLiveDesktopLeft,
     },
   ],
+  chart: chartOptions,
+  plotOptions: {
+    bar: {
+      horizontal: true,
+      dataLabels: {
+        position: "top",
+      },
+    },
+  },
+  dataLabels: {
+    enabled: true,
+    offsetX: -6,
+    style: {
+      fontSize: "20px",
+      colors: ["#fff"],
+      fontWeight: "bold",
+    },
+    formatter: function (val) {
+      return val + "s";
+    },
+  },
+  colors: [colorBlue, colorYellow],
+  stroke: {
+    show: true,
+    width: 1,
+    colors: ["#fff"],
+  },
+  tooltip: {
+    shared: true,
+    intersect: false,
+  },
   xaxis: {
+    max: 1.04,
     categories: categoriesChart1,
+    labels: {
+      style: {
+        fontSize: "20px",
+      },
+    },
   },
   yaxis: {
     title: {
       text: "Time (seconds)",
     },
     min: 0,
-    max: 1.04,
+    labels: {
+      style: {
+        fontSize: "20px",
+      },
+    },
   },
 };
 
 let liveDesktopRight = {
-  chart: chartOptions,
-  dataLabels: {
-    enabled: true,
-    formatter: function (val) {
-      return val + " CLS";
-    },
-  },
-  colors: [colorBlue, colorYellow],
-  plotOptions: {
-    bar: barOptions2,
-  },
   series: [
     {
       name: "Webflow",
@@ -290,15 +409,54 @@ let liveDesktopRight = {
       data: wordpressLiveDesktopRight,
     },
   ],
+  chart: chartOptions,
+  plotOptions: {
+    bar: {
+      horizontal: true,
+      columnWidth: "10%",
+      dataLabels: {
+        position: "top",
+      },
+      barHeight: "10%",
+    },
+  },
+  dataLabels: {
+    enabled: true,
+    style: {
+      fontSize: "20px",
+      colors: ["#fff"],
+      fontWeight: "bold",
+    },
+  },
+  colors: [colorBlue, colorYellow],
+  stroke: {
+    show: true,
+    width: 1,
+    colors: ["#fff"],
+  },
+  tooltip: {
+    shared: true,
+    intersect: false,
+  },
   xaxis: {
+    max: 0.077,
     categories: categoriesChart2,
+    labels: {
+      style: {
+        fontSize: "20px",
+      },
+    },
   },
   yaxis: {
     title: {
       text: "CLS Score",
     },
     min: 0,
-    max: 0.077,
+    labels: {
+      style: {
+        fontSize: "20px",
+      },
+    },
   },
 };
 
@@ -319,17 +477,6 @@ chartliveDesktopRight.render();
  * Live Mobile
  */
 let liveMobileLeft = {
-  chart: chartOptions,
-  dataLabels: {
-    enabled: true,
-    formatter: function (val) {
-      return val + "s";
-    },
-  },
-  colors: [colorBlue, colorYellow],
-  plotOptions: {
-    bar: barOptions,
-  },
   series: [
     {
       name: "Webflow",
@@ -340,30 +487,60 @@ let liveMobileLeft = {
       data: wordpressLiveMobileLeft,
     },
   ],
+  chart: chartOptions,
+  plotOptions: {
+    bar: {
+      horizontal: true,
+      dataLabels: {
+        position: "top",
+      },
+    },
+  },
+  dataLabels: {
+    enabled: true,
+    offsetX: -6,
+    style: {
+      fontSize: "20px",
+      colors: ["#fff"],
+      fontWeight: "bold",
+    },
+    formatter: function (val) {
+      return val + "s";
+    },
+  },
+  colors: [colorBlue, colorYellow],
+  stroke: {
+    show: true,
+    width: 1,
+    colors: ["#fff"],
+  },
+  tooltip: {
+    shared: true,
+    intersect: false,
+  },
   xaxis: {
+    max: 5.11,
     categories: categoriesChart1,
+    labels: {
+      style: {
+        fontSize: "20px",
+      },
+    },
   },
   yaxis: {
     title: {
       text: "Time (seconds)",
     },
     min: 0,
-    max: 5.11,
+    labels: {
+      style: {
+        fontSize: "20px",
+      },
+    },
   },
 };
 
 let liveMobileRight = {
-  chart: chartOptions,
-  dataLabels: {
-    enabled: true,
-    formatter: function (val) {
-      return val + " CLS";
-    },
-  },
-  colors: [colorBlue, colorYellow],
-  plotOptions: {
-    bar: barOptions2,
-  },
   series: [
     {
       name: "Webflow",
@@ -374,15 +551,54 @@ let liveMobileRight = {
       data: wordpressLiveMobileRight,
     },
   ],
+  chart: chartOptions,
+  plotOptions: {
+    bar: {
+      horizontal: true,
+      columnWidth: "10%",
+      dataLabels: {
+        position: "top",
+      },
+      barHeight: "10%",
+    },
+  },
+  dataLabels: {
+    enabled: true,
+    style: {
+      fontSize: "20px",
+      colors: ["#fff"],
+      fontWeight: "bold",
+    },
+  },
+  colors: [colorBlue, colorYellow],
+  stroke: {
+    show: true,
+    width: 1,
+    colors: ["#fff"],
+  },
+  tooltip: {
+    shared: true,
+    intersect: false,
+  },
   xaxis: {
+    max: 0.008,
     categories: categoriesChart2,
+    labels: {
+      style: {
+        fontSize: "20px",
+      },
+    },
   },
   yaxis: {
     title: {
       text: "CLS Score",
     },
     min: 0,
-    max: 0.008,
+    labels: {
+      style: {
+        fontSize: "20px",
+      },
+    },
   },
 };
 
