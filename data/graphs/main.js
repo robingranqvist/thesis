@@ -614,3 +614,508 @@ var chartLiveMobileRight = new ApexCharts(
 
 chartLiveMobileLeft.render();
 chartLiveMobileRight.render();
+
+/**
+ * All Desktop
+ */
+let allDesktopLeft = {
+  series: [
+    {
+      name: "Webflow Static",
+      data: webflowStaticDesktopLeft,
+    },
+    {
+      name: "Wordpress Static",
+      data: wordpressStaticDesktopLeft,
+    },
+    {
+      name: "Webflow Deployed",
+      data: webflowLiveDesktopLeft,
+    },
+    {
+      name: "Wordpress Deployed",
+      data: wordpressLiveDesktopLeft,
+    },
+  ],
+  chart: chartOptions,
+  plotOptions: {
+    bar: {
+      horizontal: true,
+      dataLabels: {
+        position: "top",
+      },
+    },
+  },
+  dataLabels: {
+    enabled: true,
+    offsetX: -6,
+    style: {
+      fontSize: "20px",
+      colors: ["#fff"],
+      fontWeight: "bold",
+    },
+    formatter: function (val) {
+      return val + "s";
+    },
+  },
+  colors: [colorBlue, colorYellow],
+  stroke: {
+    show: true,
+    width: 1,
+    colors: ["#fff"],
+  },
+  tooltip: {
+    shared: true,
+    intersect: false,
+  },
+  xaxis: {
+    max: 1.18,
+    categories: categoriesChart1,
+    labels: {
+      style: {
+        fontSize: "20px",
+      },
+    },
+  },
+  yaxis: {
+    title: {
+      text: "Time (seconds)",
+    },
+    min: 0,
+    labels: {
+      style: {
+        fontSize: "20px",
+      },
+    },
+  },
+};
+
+let allDesktopRight = {
+  series: [
+    {
+      name: "Webflow Static",
+      data: webflowStaticDesktopRight,
+    },
+    {
+      name: "Wordpress Static",
+      data: wordpressStaticDesktopRight,
+    },
+    {
+      name: "Webflow Deployed",
+      data: webflowLiveDesktopRight,
+    },
+    {
+      name: "Wordpress Deployed",
+      data: wordpressLiveDesktopRight,
+    },
+  ],
+  chart: chartOptions,
+  plotOptions: {
+    bar: {
+      horizontal: true,
+      columnWidth: "10%",
+      dataLabels: {
+        position: "top",
+      },
+      barHeight: "10%",
+    },
+  },
+  dataLabels: {
+    enabled: true,
+    style: {
+      fontSize: "20px",
+      colors: ["#fff"],
+      fontWeight: "bold",
+    },
+  },
+  colors: [colorBlue, colorYellow],
+  stroke: {
+    show: true,
+    width: 1,
+    colors: ["#fff"],
+  },
+  tooltip: {
+    shared: true,
+    intersect: false,
+  },
+  xaxis: {
+    max: 0.086,
+    categories: categoriesChart2,
+    labels: {
+      style: {
+        fontSize: "20px",
+      },
+    },
+  },
+  yaxis: {
+    title: {
+      text: "CLS Score",
+    },
+    min: 0,
+    labels: {
+      style: {
+        fontSize: "20px",
+      },
+    },
+  },
+};
+var chartAllDesktopLeft = new ApexCharts(
+  document.querySelector("#chart-all-desktop-left"),
+  allDesktopLeft
+);
+
+var chartAllDesktopRight = new ApexCharts(
+  document.querySelector("#chart-all-desktop-right"),
+  allDesktopRight
+);
+
+chartAllDesktopLeft.render();
+chartAllDesktopRight.render();
+
+/**
+ * All Mobile
+ */
+let allMobileLeft = {
+  series: [
+    {
+      name: "Webflow Static",
+      data: webflowStaticMobileLeft,
+    },
+    {
+      name: "Webflow Deployed",
+      data: webflowLiveMobileLeft,
+    },
+    {
+      name: "Wordpress Static",
+      data: wordpressStaticMobileLeft,
+    },
+    {
+      name: "Wordpress Deployed",
+      data: wordpressLiveMobileLeft,
+    },
+  ],
+  chart: chartOptions,
+  plotOptions: {
+    bar: {
+      horizontal: true,
+      dataLabels: {
+        position: "top",
+      },
+    },
+  },
+  dataLabels: {
+    enabled: true,
+    offsetX: -6,
+    style: {
+      fontSize: "20px",
+      colors: ["#fff"],
+      fontWeight: "bold",
+    },
+    formatter: function (val) {
+      return val + "s";
+    },
+  },
+  colors: [colorBlue, colorYellow],
+  stroke: {
+    show: true,
+    width: 1,
+    colors: ["#fff"],
+  },
+  tooltip: {
+    shared: true,
+    intersect: false,
+  },
+  xaxis: {
+    max: 5.93,
+    categories: categoriesChart1,
+    labels: {
+      style: {
+        fontSize: "20px",
+      },
+    },
+  },
+  yaxis: {
+    title: {
+      text: "Time (seconds)",
+    },
+    min: 0,
+    labels: {
+      style: {
+        fontSize: "20px",
+      },
+    },
+  },
+};
+
+let allMobileRight = {
+  series: [
+    {
+      name: "Webflow Static",
+      data: webflowStaticMobileRight,
+    },
+    {
+      name: "Wordpress Static",
+      data: wordpressStaticMobileRight,
+    },
+    {
+      name: "Webflow Deployed",
+      data: webflowLiveMobileRight,
+    },
+    {
+      name: "Wordpress Deployed",
+      data: wordpressLiveMobileRight,
+    },
+  ],
+  chart: chartOptions,
+  plotOptions: {
+    bar: {
+      horizontal: true,
+      columnWidth: "10%",
+      dataLabels: {
+        position: "top",
+      },
+      barHeight: "10%",
+    },
+  },
+  dataLabels: {
+    enabled: true,
+    style: {
+      fontSize: "20px",
+      colors: ["#fff"],
+      fontWeight: "bold",
+    },
+  },
+  colors: [colorBlue, colorYellow],
+  stroke: {
+    show: true,
+    width: 1,
+    colors: ["#fff"],
+  },
+  tooltip: {
+    shared: true,
+    intersect: false,
+  },
+  xaxis: {
+    max: 0.009,
+    categories: categoriesChart2,
+    labels: {
+      style: {
+        fontSize: "20px",
+      },
+    },
+  },
+  yaxis: {
+    title: {
+      text: "CLS Score",
+    },
+    min: 0,
+    labels: {
+      style: {
+        fontSize: "20px",
+      },
+    },
+  },
+};
+
+var chartAllMobileLeft = new ApexCharts(
+  document.querySelector("#chart-all-mobile-left"),
+  allMobileLeft
+);
+
+var chartAllMobileRight = new ApexCharts(
+  document.querySelector("#chart-all-mobile-right"),
+  allMobileRight
+);
+
+chartAllMobileLeft.render();
+chartAllMobileRight.render();
+
+/**
+ * All Mobile
+ */
+let allLeft = {
+  series: [
+    {
+      name: "Webflow Static Desktop",
+      data: webflowStaticDesktopLeft,
+    },
+    {
+      name: "Webflow Deployed Desktop",
+      data: webflowLiveDesktopLeft,
+    },
+    {
+      name: "Wordpress Static Desktop",
+      data: wordpressStaticDesktopLeft,
+    },
+    {
+      name: "Wordpress Deployed Desktop",
+      data: wordpressLiveDesktopLeft,
+    },
+    {
+      name: "Webflow Static Mobile",
+      data: webflowStaticMobileLeft,
+    },
+    {
+      name: "Webflow Deployed Mobile",
+      data: webflowLiveMobileLeft,
+    },
+    {
+      name: "Wordpress Static Mobile",
+      data: wordpressStaticMobileLeft,
+    },
+    {
+      name: "Wordpress Deployed Mobile",
+      data: wordpressLiveMobileLeft,
+    },
+  ],
+  chart: chartOptions,
+  plotOptions: {
+    bar: {
+      horizontal: true,
+      dataLabels: {
+        position: "top",
+      },
+    },
+  },
+  dataLabels: {
+    enabled: true,
+    offsetX: -6,
+    style: {
+      fontSize: "20px",
+      colors: ["#fff"],
+      fontWeight: "bold",
+    },
+    formatter: function (val) {
+      return val + "s";
+    },
+  },
+  colors: [colorBlue, colorYellow],
+  stroke: {
+    show: true,
+    width: 1,
+    colors: ["#fff"],
+  },
+  tooltip: {
+    shared: true,
+    intersect: false,
+  },
+  xaxis: {
+    max: 5.93,
+    categories: categoriesChart1,
+    labels: {
+      style: {
+        fontSize: "20px",
+      },
+    },
+  },
+  yaxis: {
+    title: {
+      text: "Time (seconds)",
+    },
+    min: 0,
+    labels: {
+      style: {
+        fontSize: "20px",
+      },
+    },
+  },
+};
+
+let allRight = {
+  series: [
+    {
+      name: "Webflow Static Desktop",
+      data: webflowStaticDesktopRight,
+    },
+    {
+      name: "Webflow Deployed Desktop",
+      data: webflowLiveDesktopRight,
+    },
+    {
+      name: "Wordpress Static Desktop",
+      data: wordpressStaticDesktopRight,
+    },
+    {
+      name: "Wordpress Deployed Desktop",
+      data: wordpressLiveDesktopRight,
+    },
+    {
+      name: "Webflow Static",
+      data: webflowStaticMobileRight,
+    },
+    {
+      name: "Webflow Deployed",
+      data: webflowLiveMobileRight,
+    },
+    {
+      name: "Wordpress Static",
+      data: wordpressStaticMobileRight,
+    },
+    {
+      name: "Wordpress Deployed",
+      data: wordpressLiveMobileRight,
+    },
+  ],
+  chart: chartOptions,
+  plotOptions: {
+    bar: {
+      horizontal: true,
+      columnWidth: "10%",
+      dataLabels: {
+        position: "top",
+      },
+      barHeight: "10%",
+    },
+  },
+  dataLabels: {
+    enabled: true,
+    style: {
+      fontSize: "20px",
+      colors: ["#fff"],
+      fontWeight: "bold",
+    },
+  },
+  colors: [colorBlue, colorYellow],
+  stroke: {
+    show: true,
+    width: 1,
+    colors: ["#fff"],
+  },
+  tooltip: {
+    shared: true,
+    intersect: false,
+  },
+  xaxis: {
+    max: 0.086,
+    categories: categoriesChart2,
+    labels: {
+      style: {
+        fontSize: "20px",
+      },
+    },
+  },
+  yaxis: {
+    title: {
+      text: "CLS Score",
+    },
+    min: 0,
+    labels: {
+      style: {
+        fontSize: "20px",
+      },
+    },
+  },
+};
+
+var chartAllLeft = new ApexCharts(
+  document.querySelector("#chart-all-left"),
+  allLeft
+);
+
+var chartAllRight = new ApexCharts(
+  document.querySelector("#chart-all-right"),
+  allRight
+);
+
+chartAllLeft.render();
+chartAllRight.render();
