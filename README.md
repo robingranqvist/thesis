@@ -1,4 +1,4 @@
-# Thesis - 2022 - Robin Granqvist
+# Thesis
 
 This is the repo containing all files used in my thesis @ BTH.
 
