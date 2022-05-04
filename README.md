@@ -4,7 +4,7 @@ This is the repo containing all files used in my thesis @ BTH.
 
 The website(s) is a mock SaaS product called Visualisera, some kind of no-code tool used to visualize data. The pages are built to measure the performance of a Webflow site by comparing it to an identical version developed in Wordpress.
 
-![repo__thumb](https://user-images.githubusercontent.com/54509721/166127326-3ce75a36-45a9-41a1-bbd6-d7c49b0e25f3.png)
+![repo__thumb](./thumb__repo.png)
 
 Mock company logos freely usable under [LogoIpsum's](https://logoipsum.com/) license. Open source icons by [Google Icons](https://fonts.google.com/icons) & [Font Awesome](https://fontawesome.com/v4/license). All photos are free to use for both commercial & non-commercial purposes, as described on [Unsplash's lincense agreement](https://unsplash.com/license) as well as background videos under [Pexel's open license](https://www.pexels.com/sv-se/license). All code, illustrations, web design & interaction design by Robin G.
 
