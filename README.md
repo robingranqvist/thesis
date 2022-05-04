@@ -22,11 +22,11 @@ This folder contains the source- and visualized performance data. It can be view
 
 ## webflow
 
-This is the static, downloaded source code for the Webflow site used for performance analysis 1. The static snapshot can be viewed live through Github Pages by [clicking here](https://robingranqvist.github.io/thesis/webflow/performance-test-webflow-robin-g.webflow.io).
+This is the static, downloaded source code for the Webflow site used for performance analysis 1. The static snapshot can be viewed live through Github Pages by [clicking here](https://robingranqvist.github.io/thesis/webflow/source).
 
 ## wordpress
 
-This is the static, downloaded source code for the Wordpress site used for performance analysis 1. The static snapshot can be viewed live through Github Pages by [clicking here](https://robingranqvist.github.io/thesis/wordpress/13.53.139.156).
+This is the static, downloaded source code for the Wordpress site used for performance analysis 1. The static snapshot can be viewed live through Github Pages by [clicking here](https://robingranqvist.github.io/thesis/wordpress/source).
 
 ## wp-source
 
