@@ -3,37 +3,37 @@
  * Lighthouse through its CLI
  * Robin Granqvist 2022
  */
-
 const execSync = require("child_process").execSync;
 let currentRun = 0;
-let preset;
+let breakpoint;
 
 /**
+ * Options for the autoamted performance tests.
  * @param {string} url // the testing url
  * @param {string} runs // how many runs
- * @param {string} preset // desktop or mobile
+ * @param {string} breakpoint // desktop or mobile
  * @param {string} builder // webflow or wordpress
  * @param {string} throttling // simulate for default
  * @param {string} output // json or html
- * @param {string} type // static or deployed
+ * @param {string} deploymentType // static or deployed
  */
 const options = {
   url: "https://robingranqvist.github.io/thesis/wordpress/source/",
   runs: 3,
-  preset: "mobile",
+  breakpoint: "mobile",
   builder: "webflow",
   throttling: "simulate",
   output: "json",
-  type: "static",
+  deploymentType: "static",
 };
 
 // Mobile as default, does not allow for preset flag
-if (options.preset === "desktop") preset = "--preset=desktop";
+if (options.breakpoint === "desktop") breakpoint = "--preset=desktop";
 
 while (currentRun < options.runs) {
   try {
     execSync(
-      `lighthouse ${options.url} --quiet ${preset} --only-categories=performance --throttling-method=${options.throttling} --output=${options.output} --output-path=./data/${options.builder}/${options.type}/${options.preset}/lighthouse-results-${options.builder}-${currentRun}.${options.output}`
+      `lighthouse ${options.url} --quiet ${breakpoint} --only-categories=performance --throttling-method=${options.throttling} --output=${options.output} --output-path=./data/${options.builder}/${options.deploymentType}/${options.breakpoint}/lighthouse-results-${options.builder}-${currentRun}.${options.output}`
     );
   } catch (err) {
     console.error(err);
