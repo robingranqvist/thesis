@@ -14,20 +14,28 @@ Both websites have been downloaded using wget commands, downloading all static c
 
 ## assets
 
-These are all assets shared between the Webflow & Wordpress site.
+All assets shared between the Webflow & Wordpress site.
 
-## data
+## graphs
 
-This folder contains the source- and visualized performance data. It can be viewed by [clicking here](https://robingranqvist.github.io/thesis/data/graphs/) (temporarily a bit strange looking, will be changed).
+The visualized performance data. It can be viewed by [clicking here](https://robingranqvist.github.io/thesis/graphs/graphs/) (temporarily a bit strange looking, will be changed).
+
+## Illustrations
+
+A few illustrations used for the Thesis.
+
+## lighthouse
+
+The Google Lighthouse automation- and data parsing scripts.
 
 ## webflow
 
-This is the static, downloaded source code for the Webflow site used for performance analysis 1. The static snapshot can be viewed live through Github Pages by [clicking here](https://robingranqvist.github.io/thesis/webflow/source).
+The static, downloaded source code for the Webflow site used for performance analysis 1. The static snapshot can be viewed live through Github Pages by [clicking here](https://robingranqvist.github.io/thesis/webflow/source).
 
 ## wordpress
 
-This is the static, downloaded source code for the Wordpress site used for performance analysis 1. The static snapshot can be viewed live through Github Pages by [clicking here](https://robingranqvist.github.io/thesis/wordpress/source).
+The static, downloaded source code for the Wordpress site used for performance analysis 1. The static snapshot can be viewed live through Github Pages by [clicking here](https://robingranqvist.github.io/thesis/wordpress/source).
 
 ## wp-source
 
-This is the full source code for the AWS-deployed Wordpress site. It contains the full installation, however, the template specific files can be found in wp-source/wp-content/themes/visualisera. Assets uploaded through the CMS can be found in wp-source/wp-content/themes/visualisera/uploads/2022/04.
+The full source code for the AWS-deployed Wordpress site. It contains the full installation, however, the template specific files can be found in wp-source/wp-content/themes/visualisera. Assets uploaded through the CMS can be found in wp-source/wp-content/themes/visualisera/uploads/2022/04.

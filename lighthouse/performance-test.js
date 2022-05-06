@@ -23,7 +23,7 @@ const options = {
   preset: "mobile",
   builder: "webflow",
   throttling: "simulate",
-  output: "html",
+  output: "json",
   type: "static",
 };
 
@@ -33,14 +33,14 @@ if (options.preset === "desktop") preset = "--preset=desktop";
 while (currentRun < options.runs) {
   try {
     execSync(
-      `lighthouse ${options.url} --quiet ${preset} --throttling-method=${options.throttling} --output=${options.output} --output-path=./results/${options.builder}/${options.type}/${options.preset}/lighthouse-results-${options.builder}-${currentRun}.html`
+      `lighthouse ${options.url} --quiet ${preset} --only-categories=performance --throttling-method=${options.throttling} --output=${options.output} --output-path=./data/${options.builder}/${options.type}/${options.preset}/lighthouse-results-${options.builder}-${currentRun}.${options.output}`
     );
   } catch (err) {
     console.error(err);
     break;
   }
 
-  console.log(`Performance test ${currentRun + 1} on ${options.url} finished!`);
+  console.log(`Performance test ${currentRun} on ${options.url} finished!`);
   currentRun++;
 }
 
