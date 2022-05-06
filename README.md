@@ -22,11 +22,19 @@ The visualized performance data. It can be viewed by [clicking here](https://rob
 
 ## Illustrations
 
-A few illustrations used for the Thesis.
+A few illustrations used in the Thesis itself.
 
 ## lighthouse
 
 The Google Lighthouse automation- and data parsing scripts.
+
+### performance-test.js
+
+The script for automating the performance tests for a specific domain on a specific breakpoint. Results are outputted as JSON files in the /data folder.
+
+### performance-test-parsing.js
+
+The script for parsing JSON performance test result files and outputting them as CSV files in the /csv folder.
 
 ## webflow
 
