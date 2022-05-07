@@ -18,13 +18,13 @@ let breakpoint;
  * @param {string} deploymentType // static or deployed
  */
 const options = {
-  url: "https://robingranqvist.github.io/thesis/wordpress/source/",
-  runs: 3,
-  breakpoint: "mobile",
-  builder: "webflow",
+  url: "http://13.53.139.156/",
+  runs: 150,
+  breakpoint: "desktop",
+  builder: "wordpress",
   throttling: "simulate",
   output: "json",
-  deploymentType: "static",
+  deploymentType: "deployed",
 };
 
 // Mobile as default, does not allow for preset flag
