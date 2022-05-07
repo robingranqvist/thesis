@@ -2,6 +2,8 @@
  * Script for parsing Lighthouse performance
  * analysis metrics in JSON and outputting them
  * as CSV files.
+ *
+ * Robin Granqvist - 2022
  */
 const fs = require("fs");
 const createCsvWriter = require("csv-writer").createObjectCsvWriter;

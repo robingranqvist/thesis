@@ -1,19 +1,20 @@
 /**
  * Script for automating Lighthouse
- * performance analysis through its CLI
- * Robin Granqvist 2022.
+ * performance analysis through its CLI.
+ *
+ * Robin Granqvist - 2022
  */
 const execSync = require("child_process").execSync;
 let currentRun = 0;
 let breakpoint;
 
 /**
- * Options for the autoamted performance tests.
- * @param {string} url // the testing url
- * @param {string} runs // how many runs
+ * Options for Lighthouse.
+ * @param {string} url // the url to be analyzed
+ * @param {string} runs // amount of runs to be performed
  * @param {string} breakpoint // desktop or mobile
  * @param {string} builder // webflow or wordpress
- * @param {string} throttling // simulate for default
+ * @param {string} throttling // simulate for Lighthouse default
  * @param {string} output // json or html
  * @param {string} deploymentType // static or deployed
  */
