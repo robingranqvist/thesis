@@ -1,7 +1,6 @@
 /**
- * Script for parsing test scores
- * and writing them to CSV files
- * Robin Granqvist 2022
+ * Script for parsing Lighthouse performance
+ * analysis metrics from JSON to CSV
  */
 const fs = require("fs");
 const createCsvWriter = require("csv-writer").createObjectCsvWriter;
@@ -73,4 +72,4 @@ for (let i = 0; i < fileAmount; i++) {
 
 csvWriter
   .writeRecords(metricScoresSummed)
-  .then(() => console.log("The CSV file was written successfully"));
+  .then(() => console.log("The CSV file was created successfully"));

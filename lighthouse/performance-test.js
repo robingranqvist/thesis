@@ -1,6 +1,6 @@
 /**
- * Script for automating
- * Lighthouse through its CLI
+ * Script for automating Lighthouse
+ * performance analysis through its CLI
  * Robin Granqvist 2022
  */
 const execSync = require("child_process").execSync;
@@ -18,8 +18,8 @@ let breakpoint;
  * @param {string} deploymentType // static or deployed
  */
 const options = {
-  url: "http://13.53.139.156/",
-  runs: 150,
+  url: "",
+  runs: 100,
   breakpoint: "desktop",
   builder: "wordpress",
   throttling: "simulate",
@@ -44,4 +44,4 @@ while (currentRun < options.runs) {
   currentRun++;
 }
 
-console.log(`Performance tests on ${options.url} all done!`);
+console.log(`Performance tests on ${options.url} are done!`);
