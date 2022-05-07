@@ -1,6 +1,7 @@
 /**
  * Script for parsing Lighthouse performance
- * analysis metrics from JSON to CSV
+ * analysis metrics in JSON and outputting them
+ * as CSV files.
  */
 const fs = require("fs");
 const createCsvWriter = require("csv-writer").createObjectCsvWriter;

@@ -1,7 +1,7 @@
 /**
  * Script for automating Lighthouse
  * performance analysis through its CLI
- * Robin Granqvist 2022
+ * Robin Granqvist 2022.
  */
 const execSync = require("child_process").execSync;
 let currentRun = 0;
