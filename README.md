@@ -20,9 +20,9 @@ All assets shared between the Webflow & Wordpress site.
 
 The visualized performance data. It can be viewed by [clicking here](https://robingranqvist.github.io/thesis/graphs/graphs/) (temporarily a bit strange looking, will be changed).
 
-## Illustrations
+## thesis-assets
 
-A few illustrations used in the Thesis itself.
+Illustrations & graphs used in the thesis.
 
 ## lighthouse
 
