@@ -2,13 +2,11 @@
 
 This is the repo containing all files used in my thesis @ BTH.
 
-The website(s) is a mock SaaS product called Visualisera, some kind of no-code tool used to visualize data. The pages are built to measure the performance of a Webflow site by comparing it to an identical version developed in Wordpress. Each website has been hosted in two separate way. One static and one deployed version. Details below.
+The website is a mock SaaS product called Visualisera, some kind of no-code tool used to visualize data. The pages are built to measure the performance of a Webflow site by comparing it to an identical version developed in Wordpress. Each website has been hosted in two separate way. One static and one deployed version. Details below.
 
 Google Lighthouse has been automated to measure 6 performance metrics of each websites performance on both the desktop- and mobile breakpoint. Each version on each breakpoint has been analysed 100 times in order to reach a statistically significant average for each metric.
 
 ![repo__thumb](./thumb__repo.png)
-
-Mock company logos freely usable under [LogoIpsum's](https://logoipsum.com/) license. Open source icons by [Google Icons](https://fonts.google.com/icons) & [Font Awesome](https://fontawesome.com/v4/license). All photos are free to use for both commercial & non-commercial purposes, as described on [Unsplash's lincense agreement](https://unsplash.com/license) as well as background videos under [Pexel's open license](https://www.pexels.com/sv-se/license). All code, illustrations, web design & interaction design by Robin G.
 
 ## Static snapshots
 
