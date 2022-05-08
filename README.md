@@ -28,9 +28,9 @@ A few illustrations used in the Thesis itself.
 
 The Google Lighthouse automation- and data parsing scripts.
 
-**performance-test.js** -> The script for automating the performance tests for a specific domain on a specific breakpoint. Results are outputted as JSON files in the /data folder.
+**performance-test.js** -> The script for automating the performance tests for a specific domain on a specific breakpoint. Results are outputted as JSON files in /data subfolders.
 
-**performance-test-parsing.js** -> The script for parsing JSON performance test result files in the /data folder and outputting them as CSV files in the /csv folder.
+**performance-test-parsing.js** -> The script for parsing JSON performance test result files in the /data folder and outputting them as CSV files in /csv subfolder.
 
 ## webflow
 

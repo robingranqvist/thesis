@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Visualisera - Performance</title>
+    <meta name="description" content="Visualisera - Performance" />
+    <meta name="author" content="SitePoint" />
+
+    <meta property="og:title" content="Visualisera - Performance" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="#" />
+    <meta property="og:description" content="Visualisera - Performance" />
+    <meta property="og:image" content="" />
+
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>💪 Performance Analysis</h1>
+      <p class="subtitle">
+        These are the results of the Google Lighthouse performance analysis. The
+        graphs show the average score (out of 15 runs) of each analyzed
+        parameter. Each graph has its max value set to the max value of its
+        performance analysis. The raw data can be viewed
+        <a href="#">here</a>. Webflow's results are colored blue, while
+        Wordpress's results are colored yellow.
+      </p>
+      <p class="subtitle">
+        And remember, since all parameters are related to loading speed in some
+        way, the lower the better.
+      </p>
+      <!-- Static Desktop -->
+      <div class="chart__heading-wrapper">
+        <h2>Static Snaphot - Desktop</h2>
+        <div class="chart__total-wrapper">
+          <p>
+            <span class="chart__total">Webflow</span> -
+            <span class="green">98</span> average total score
+          </p>
+          <p>
+            <span class="chart__total">Wordpress</span> -
+            <span class="green">99.1</span> average total score
+          </p>
+        </div>
+      </div>
+      <div class="chart__flex-container">
+        <div id="chart-static-desktop-all" class="chart__left"></div>
+        <div id="chart-static-desktop-cls" class="chart__right"></div>
+      </div>
+
+      <!-- Static Mobile -->
+      <div class="chart__heading-wrapper">
+        <h2>Static Snaphot - Mobile</h2>
+        <div class="chart__total-wrapper">
+          <p>
+            <span class="chart__total">Webflow</span> -
+            <span class="green">98</span> average total score
+          </p>
+          <p>
+            <span class="chart__total">Wordpress</span> -
+            <span class="green">99.1</span> average total score
+          </p>
+        </div>
+      </div>
+      <div class="chart__flex-container">
+        <div id="chart-static-mobile-all" class="chart__left"></div>
+        <div id="chart-static-mobile-cls" class="chart__right"></div>
+      </div>
+
+      <!-- Deployed Desktop -->
+      <div class="chart__heading-wrapper">
+        <h2>Deployed - Desktop</h2>
+        <div class="chart__total-wrapper">
+          <p>
+            <span class="chart__total">Webflow</span> -
+            <span class="green">98</span> average total score
+          </p>
+          <p>
+            <span class="chart__total">Wordpress</span> -
+            <span class="green">99.1</span> average total score
+          </p>
+        </div>
+      </div>
+      <div class="chart__flex-container">
+        <div id="chart-deployed-desktop-all" class="chart__left"></div>
+        <div id="chart-deployed-desktop-cls" class="chart__right"></div>
+      </div>
+
+      <!-- Deployed Mobile -->
+      <div class="chart__heading-wrapper">
+        <h2>Deployed - Mobile</h2>
+        <div class="chart__total-wrapper">
+          <p>
+            <span class="chart__total">Webflow</span> -
+            <span class="green">98</span> average total score
+          </p>
+          <p>
+            <span class="chart__total">Wordpress</span> -
+            <span class="green">99.1</span> average total score
+          </p>
+        </div>
+      </div>
+      <div class="chart__flex-container">
+        <div id="chart-deployed-mobile-all" class="chart__left"></div>
+        <div id="chart-deployed-mobile-cls" class="chart__right"></div>
+      </div>
+
+      <!-- Static ALL -->
+      <div class="chart__heading-wrapper">
+        <h2>Static All</h2>
+        <div class="chart__total-wrapper">
+          <p>
+            <span class="chart__total">Webflow</span> -
+            <span class="green">98</span> average total score
+          </p>
+          <p>
+            <span class="chart__total">Wordpress</span> -
+            <span class="green">99.1</span> average total score
+          </p>
+        </div>
+      </div>
+      <div class="chart__flex-container">
+        <div id="chart-static-all" class="chart__left"></div>
+        <div id="chart-static-cls" class="chart__right"></div>
+      </div>
+
+      <!-- Deployed ALL -->
+      <div class="chart__heading-wrapper">
+        <h2>Deployed All</h2>
+        <div class="chart__total-wrapper">
+          <p>
+            <span class="chart__total">Webflow</span> -
+            <span class="green">98</span> average total score
+          </p>
+          <p>
+            <span class="chart__total">Wordpress</span> -
+            <span class="green">99.1</span> average total score
+          </p>
+        </div>
+      </div>
+      <div class="chart__flex-container">
+        <div id="chart-deployed-all" class="chart__left"></div>
+        <div id="chart-deployed-cls" class="chart__right"></div>
+      </div>
+
+      <!-- ALL TOTAL -->
+      <div class="chart__heading-wrapper">
+        <h2>All Total</h2>
+        <div class="chart__total-wrapper">
+          <p>
+            <span class="chart__total">Webflow</span> -
+            <span class="green">98</span> average total score
+          </p>
+          <p>
+            <span class="chart__total">Wordpress</span> -
+            <span class="green">99.1</span> average total score
+          </p>
+        </div>
+      </div>
+      <div class="chart__flex-container">
+        <div id="chart-all" class="chart__left"></div>
+        <div id="chart-cls" class="chart__right"></div>
+      </div>
+
+      <footer>Robin Granqvist - 2022</footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
