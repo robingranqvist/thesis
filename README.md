@@ -12,6 +12,10 @@ Mock company logos freely usable under [LogoIpsum's](https://logoipsum.com/) lic
 
 Both websites have been downloaded using wget commands, downloading all static code & assets. While Webflow includes javascript libraries such as jQuery & IX2, the alternatives used for Wordpress ([gsap](https://cdnjs.com/libraries/gsap), [scrolltrigger](https://cdnjs.com/libraries/ScrollTrigger), [tweenlite](https://www.cdnpkg.com/gsap/file/TweenLite.min.js/)) have been downloaded as well. Google fonts & analytics scripts have not been downloaded and are instead imported through their CDN's for both sites.
 
+## Deployed versions
+
+The Webflow site has been deployed using Webflow's internal hosting solution on a staging domain, while the Wordpress site has been deployed on an AWS EC2 t3-micro instance with a server location of Stockholm.
+
 ## assets
 
 All assets shared between the Webflow & Wordpress site.
