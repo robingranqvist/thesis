@@ -2,9 +2,9 @@
 
 This is the repo containing all files used in my thesis @ BTH.
 
-The website is a mock SaaS product called Visualisera, some kind of no-code tool used to visualize data. The pages are built to measure the performance of a Webflow site by comparing it to an identical version developed in Wordpress. Each website has been hosted in two separate way. One static and one deployed version. Details below.
+The website is a mock SaaS product called Visualisera, some kind of no-code tool used to visualize data. The website is developed to measure the performance of Webflow by comparing it to an identical version developed in Wordpress. Each website has been hosted in two separate way. One static snapshot hosted using the same Github Pages environment, and one deployed version using Webflow's internal hosting solution and an AWS EC2 t3-micro instance for Wordpress.
 
-Google Lighthouse has been automated to measure 6 performance metrics of each websites performance on both the desktop- and mobile breakpoint. Each version on each breakpoint has been analysed 100 times in order to reach a statistically significant average for each metric.
+Google Lighthouse has been automated to measure 6 performance metrics of each websites' performance on both desktop- and mobile. Each version on each breakpoint has been analysed 100 times in order to reach a statistically significant average for each metric.
 
 ![repo__thumb](./thumb__repo.png)
 
