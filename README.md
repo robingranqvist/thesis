@@ -38,11 +38,11 @@ Illustrations & graphs used in the thesis.
 
 ## webflow
 
-The static, downloaded source code for the Webflow site used for performance analysis 1. The static snapshot can be viewed live through Github Pages by [clicking here](https://robingranqvist.github.io/thesis/webflow/source).
+The static, downloaded source code for the Webflow site used for performance analysis 1. It can be viewed live through Github Pages by [clicking here](https://robingranqvist.github.io/thesis/webflow/source).
 
 ## wordpress
 
-The static, downloaded source code for the Wordpress site used for performance analysis 1. The static snapshot can be viewed live through Github Pages by [clicking here](https://robingranqvist.github.io/thesis/wordpress/source).
+The static, downloaded source code for the Wordpress site used for performance analysis 1. It can be viewed live through Github Pages by [clicking here](https://robingranqvist.github.io/thesis/wordpress/source).
 
 ## wp-source
 
