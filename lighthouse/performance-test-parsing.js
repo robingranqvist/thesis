@@ -16,7 +16,7 @@ const createCsvWriter = require("csv-writer").createObjectCsvWriter;
  */
 const options = {
   breakpoint: "desktop",
-  builder: "webflow",
+  builder: "wordpress",
   deploymentType: "deployed",
 };
 
