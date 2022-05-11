@@ -20,36 +20,40 @@ Both websites have been downloaded using wget commands, downloading all static c
 
 The Webflow site has been deployed using Webflow's internal hosting solution on a staging domain, while the Wordpress site has been deployed on an AWS EC2 t3-micro instance with a server location of Stockholm.
 
-## Files
+## Folders
 
-### assets
+### /assets
 
 All assets shared between the Webflow & Wordpress site.
 
-### graphs
+### /data
+
+All raw data collected and used in the thesis
+
+### /graphs
 
 The visualized performance data. It can be viewed by [clicking here](https://robingranqvist.github.io/thesis/graphs/graphs/) (temporarily a bit strange looking, will be changed).
 
-### lighthouse
+### /lighthouse
 
 The Google Lighthouse automation- and data parsing scripts.
 
-**performance-test.js** -> The script for automating the performance tests for a specific domain on a specific breakpoint. Results are outputted as JSON files in /data subfolders.
+**performance-test.js** The script for automating the performance tests for a specific domain on a specific breakpoint. Results are outputted as JSON files in /data subfolders.
 
-**performance-test-parsing.js** -> The script for parsing JSON performance test result files in the /data folder and outputting them as CSV files in /csv subfolder.
+**performance-test-parsing.js** The script for parsing JSON performance test result files in the /data folder and outputting them as CSV files in /csv subfolder.
 
-### thesis-assets
+### /thesis-assets
 
 Illustrations & graphs used in the thesis.
 
-### webflow
+### /webflow
 
 The static, downloaded source code for the Webflow site used for performance analysis 1. It can be viewed live through Github Pages by [clicking here](https://robingranqvist.github.io/thesis/webflow/source).
 
-### wordpress
+### /wordpress
 
 The static, downloaded source code for the Wordpress site used for performance analysis 1. It can be viewed live through Github Pages by [clicking here](https://robingranqvist.github.io/thesis/wordpress/source).
 
-### wp-source
+### /wp-source
 
 The full source code for the AWS-deployed Wordpress site. It contains the full installation, however, the template specific files can be found in wp-source/wp-content/themes/visualisera. Assets uploaded through the CMS can be found in wp-source/wp-content/themes/visualisera/uploads/2022/04.
