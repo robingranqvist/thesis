@@ -18,7 +18,7 @@ Both websites have been downloaded using wget commands, downloading all static c
 
 ## Dynamic versions
 
-The Webflow site has been deployed using Webflow's internal hosting solution on a staging domain, while the Wordpress site has been deployed on an AWS EC2 t3-micro instance with a server location of Stockholm.
+The Webflow site has been deployed using Webflow's internal hosting environment, while the Wordpress site has been deployed on an AWS EC2 t3-micro instance with a server location of Stockholm.
 
 ## Folders
 
