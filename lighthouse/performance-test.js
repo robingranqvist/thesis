@@ -22,10 +22,10 @@ const options = {
   url: "",
   runs: 100,
   breakpoint: "desktop",
-  builder: "wordpress",
+  builder: "webflow",
   throttling: "simulate",
   output: "json",
-  deploymentType: "deployed",
+  deploymentType: "static",
 };
 
 // Mobile as default, does not allow for preset flag
